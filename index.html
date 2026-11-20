@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>cntrl demo</title>
+<meta name="description" content="A working demo of cntrl, the phone app for a home TRMNL e-ink screen. It doesn't connect to a screen and fakes the AI generation.">
+<style>
+  :root{color-scheme:light dark;--bg:#f6f5f2;--fg:#111;--mut:#666}
+  @media (prefers-color-scheme:dark){:root{--bg:#141414;--fg:#eee;--mut:#999}}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--fg)}
+  body{display:flex;align-items:center;justify-content:center;padding:16px;box-sizing:border-box;font:500 15px/1.45 -apple-system,BlinkMacSystemFont,"Inter","Helvetica Neue",Arial,sans-serif;text-align:center}
+  p{margin:.3em 0;max-width:30em}.mut{color:var(--mut);font-size:13px}
+</style>
+<!-- Google Analytics: page address only, so nothing kept in the URL reaches Google -->
+<script>
+(function () {
+  if (location.hostname !== 'haaans.com') return;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', 'G-MGSJYZJ5YJ', {
+    content_group: 'cntrl',
+    page_location: location.origin + location.pathname,
+    page_referrer: document.referrer.split(/[?#]/)[0]
+  });
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-MGSJYZJ5YJ';
+  document.head.appendChild(s);
+})();
+</script>
+</head>
+<body>
+<main>
+  <p><b>Opening the cntrl demo…</b></p>
+  <p class="mut" id="why">It runs the real app in your browser. It doesn't connect to a screen and fakes the AI generation.</p>
+</main>
+<script>
+(async () => {
+  const why = document.getElementById('why');
+  if (!('serviceWorker' in navigator)) { why.textContent = 'This browser can’t run the demo (it needs service workers). Try Chrome or Safari.'; return; }
+  try {
+    const reg = await navigator.serviceWorker.register('sw.js', { scope: './' });
+    await navigator.serviceWorker.ready;
+    if (!navigator.serviceWorker.controller) {
+      await new Promise((r) => { navigator.serviceWorker.addEventListener('controllerchange', r, { once: true }); setTimeout(r, 3000); });
+    }
+    location.reload();
+  } catch (err) {
+    why.textContent = `The demo couldn’t start: ${err.message}`;
+  }
+})();
+</script>
+</body>
+</html>

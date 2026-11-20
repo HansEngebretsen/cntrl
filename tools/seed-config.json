@@ -1,0 +1,108 @@
+{
+ "version": 3,
+ "timezone": "America/Los_Angeles",
+ "refreshRate": 900,
+ "peak": {
+  "start": "17:00",
+  "end": "23:00",
+  "rate": 300
+ },
+ "quietStart": "23:30",
+ "quietEnd": "05:00",
+ "screens": [
+  {
+   "settings": {
+    "_recipe": "local:nhl-team",
+    "dither": true,
+    "v_team": "SEA"
+   },
+   "id": "yujxrn",
+   "plugin": "recipe",
+   "name": "NHL Team"
+  },
+  {
+   "settings": {
+    "_recipe": "local:hourly-weather",
+    "dither": true,
+    "v_Latitude": "47.61",
+    "v_Longitude": "-122.33",
+    "v_Units": "Imperial"
+   },
+   "id": "2lae0a",
+   "plugin": "recipe",
+   "name": "Hourly Weather Forecast"
+  },
+  {
+   "settings": {
+    "_recipe": "local:stock-quote",
+    "dither": true,
+    "v_symbol": "GOOG",
+    "v_asset_class": "stocks",
+    "v_days": "30"
+   },
+   "id": "cy0dq5",
+   "plugin": "recipe",
+   "name": "Stock"
+  },
+  {
+   "settings": {
+    "_recipe": "local:pixel-christmas-countdown",
+    "dither": true,
+    "v_scene": "shuffle",
+    "v_rotate": "refresh"
+   },
+   "id": "dhkn0b",
+   "plugin": "recipe",
+   "name": "Christmas Countdown"
+  },
+  {
+   "settings": {},
+   "id": "tfzvv1",
+   "plugin": "hackernews",
+   "name": "Hacker News"
+  },
+  {
+   "settings": {
+    "custom": ""
+   },
+   "id": "evevw9",
+   "plugin": "quote",
+   "name": "Motivational Quote"
+  },
+  {
+   "settings": {
+    "label": "Days left this year",
+    "date": "2026-12-31"
+   },
+   "id": "5m1022",
+   "plugin": "countdown",
+   "name": "Days Left This Year"
+  },
+  {
+   "settings": {
+    "title": "Hello, TRMNL",
+    "body": "Edit this screen from cntrl on your phone.",
+    "items": "Water the plants\nCall Mom\nShip the thing",
+    "footer": "",
+    "showDate": true
+   },
+   "id": "today",
+   "plugin": "dashboard",
+   "name": "Today"
+  }
+ ],
+ "hidden": [],
+ "recent": [],
+ "sleep": {
+  "screen": "",
+  "settings": {
+   "style": "map",
+   "showWake": true
+  }
+ },
+ "upNext": null,
+ "pin": null,
+ "adopted": [
+  "pixel-countdowns-1:christmas"
+ ]
+}
