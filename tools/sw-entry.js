@@ -8,7 +8,7 @@ const SEED_VERSION = '__SEED_VERSION__';
 const BASE = new URL(self.registration.scope).pathname.replace(/\/$/, ''); // e.g. "/cntrl"
 const ORIGIN = self.location.origin;
 const PASSWORD = 'demo';
-const STATIC = new Set(['', '/', '/index.html', '/client.js', '/sw.js', '/seed.json', '/record.json', '/reset']);
+const STATIC = new Set(['', '/', '/index.html', '/client.js', '/sw.js', '/seed.json', '/record.json', '/robots.txt', '/README.md', '/reset']);
 
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', (e) => e.waitUntil(self.clients.claim()));
@@ -194,6 +194,7 @@ async function answer(request, clientId) {
   if (/text\/html|javascript|text\/css|json|manifest/.test(type)) {
     let text = rewrite(await res.text());
     if (/text\/html/.test(type) && path === '/admin' && text.includes('</body>')) text = text.replace('</body>', `${BANNER}</body>`);
+    if (/text\/html/.test(type)) text = text.replace(/<head[^>]*>/i, (h) => `${h}<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">`); // never in search, like haaans.com/say
     out.delete('Content-Length');
     return new Response(text, { status: res.status, headers: out });
   }

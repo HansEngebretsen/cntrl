@@ -1,0 +1,3 @@
+# The cntrl demo: a copy of a private app, kept out of search.
+User-agent: *
+Disallow: /
