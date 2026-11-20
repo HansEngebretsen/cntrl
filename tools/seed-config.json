@@ -1,7 +1,7 @@
 {
  "version": 3,
  "timezone": "America/Los_Angeles",
- "refreshRate": 900,
+ "refreshRate": 300,
  "peak": {
   "start": "17:00",
   "end": "23:00",
@@ -12,37 +12,289 @@
  "screens": [
   {
    "settings": {
-    "_recipe": "local:nhl-team",
+    "_recipe": "9917",
     "dither": true,
-    "v_team": "SEA"
+    "v_select_0291": ""
    },
-   "id": "yujxrn",
+   "id": "7wphz5",
    "plugin": "recipe",
-   "name": "NHL Team"
+   "name": "This Day in History"
   },
   {
    "settings": {
-    "_recipe": "local:hourly-weather",
-    "dither": true,
-    "v_Latitude": "47.61",
-    "v_Longitude": "-122.33",
-    "v_Units": "Imperial"
+    "_recipe": "local:nhl-team-y51g3",
+    "dither": false,
+    "v_team": "SEA",
+    "_prompt": "Make the logo much bigger and remove the word “kraken” there — include the next home gae so we have the last game which takes up 1/3 then we nave the next game which takes up 2/3 and includes the next home game (more subtle) IF and only if the next game is not home. if the next game is home then we just have the next 2 games. While a game is going on, let show the score and teme left at the top next ot the team logo. make the logo a little bit bigger still. — make the next home gaem sorta smaller and subtext and aligned with the baseline of the next game it can just have the team logo and say \"Next @ home vs [logo] Tue, Oct 20 6:40PM\"  and lets also use for the next game the team logo. — no still stack and left justify the \"at flyers today 4:00 thing. and make the logo a little bigger for the vs for tuesday thing its not super visible. so make the flyers logo bigger,  and change at to \"in Phili\" but this should be left justified, with \"today\" so we can have a nice stacked grid here. ab",
+    "_history": [
+     {
+      "ref": "local:nhl-team-mimez",
+      "prompt": "Make the logo much bigger and remove the word “kraken” there — include the next home gae so we have the last game which takes up 1/3 then we nave the next game which takes up 2/3 and includes the next home game (more subtle) IF and only if the next game is not home. if the next game is home then we just have the next 2 games. While a game is going on, let show the score and teme left at the top next ot the team logo. make the logo a little bit bigger still. — make the next home gaem sorta smaller and subtext and aligned with the baseline of the next game it can just have the team logo and say \"Next @ home vs [logo] Tue, Oct 20 6:40PM\"  and lets also use for the next game the team logo. — no still stack and left justify the \"at flyers today 4:00 thing. and make the logo a little bigger for the vs for tuesday thing its not super visible. so make the flyers logo bigger,  and change at to \"in Phili\" but this should be left justified, with \"today\" so we can have a nice stacked grid here. ab",
+      "v": 16,
+      "at": 1792032934918
+     },
+     {
+      "ref": "local:kraken-bcoh8",
+      "prompt": "Make the logo much bigger and remove the word “kraken” there — include the next home gae so we have the last game which takes up 1/3 then we nave the next game which takes up 2/3 and includes the next home game (more subtle) IF and only if the next game is not home. if the next game is home then we just have the next 2 games. While a game is going on, let show the score and teme left at the top next ot the team logo. make the logo a little bit bigger still. — make the next home gaem sorta smaller and subtext and aligned with the baseline of the next game it can just have the team logo and say \"Next @ home vs [logo] Tue, Oct 20 6:40PM\"  and lets also use for the next game the team logo. — no still stack and left justify the \"at flyers today 4:00 thing. and make the logo a little bigger for the vs for tuesday thing its not super visible. so make the flyers logo bigger,  and change at to \"in Phili\" but this should be left justified, with \"today\" so we can have a nice stacked grid here. ab",
+      "v": 15,
+      "at": 1791952947097
+     },
+     {
+      "ref": "local:kraken-awb7i",
+      "prompt": "Make the logo much bigger and remove the word “kraken” there — include the next home gae so we have the last game which takes up 1/3 then we nave the next game which takes up 2/3 and includes the next home game (more subtle) IF and only if the next game is not home. if the next game is home then we just have the next 2 games. While a game is going on, let show the score and teme left at the top next ot the team logo. make the logo a little bit bigger still. — make the next home gaem sorta smaller and subtext and aligned with the baseline of the next game it can just have the team logo and say \"Next @ home vs [logo] Tue, Oct 20 6:40PM\"  and lets also use for the next game the team logo. — no still stack and left justify the \"at flyers today 4:00 thing. and make the logo a little bigger for the vs for tuesday thing its not super visible. so make the flyers logo bigger,  and change at to \"in Phili\" but this should be left justified, with \"today\" so we can have a nice stacked grid here. ab",
+      "v": 14,
+      "at": 1791934194111
+     },
+     {
+      "ref": "local:nhl-team-aw89g",
+      "prompt": "Make the logo much bigger and remove the word “kraken” there — include the next home gae so we have the last game which takes up 1/3 then we nave the next game which takes up 2/3 and includes the next home game (more subtle) IF and only if the next game is not home. if the next game is home then we just have the next 2 games. While a game is going on, let show the score and teme left at the top next ot the team logo. make the logo a little bit bigger still. — make the next home gaem sorta smaller and subtext and aligned with the baseline of the next game it can just have the team logo and say \"Next @ home vs [logo] Tue, Oct 20 6:40PM\"  and lets also use for the next game the team logo. — no still stack and left justify the \"at flyers today 4:00 thing. and make the logo a little bigger for the vs for tuesday thing its not super visible. so make the flyers logo bigger,  and change at to \"in Phili\" but this should be left justified, with \"today\" so we can have a nice stacked grid here. ab",
+      "v": 13,
+      "at": 1791933430226
+     },
+     {
+      "ref": "local:kraken-aeyhj",
+      "prompt": "Make the logo much bigger and remove the word “kraken” there — include the next home gae so we have the last game which takes up 1/3 then we nave the next game which takes up 2/3 and includes the next home game (more subtle) IF and only if the next game is not home. if the next game is home then we just have the next 2 games. While a game is going on, let show the score and teme left at the top next ot the team logo. make the logo a little bit bigger still. — make the next home gaem sorta smaller and subtext and aligned with the baseline of the next game it can just have the team logo and say \"Next @ home vs [logo] Tue, Oct 20 6:40PM\"  and lets also use for the next game the team logo. — no still stack and left justify the \"at flyers today 4:00 thing. and make the logo a little bigger for the vs for tuesday thing its not super visible. so make the flyers logo bigger,  and change at to \"in Phili\" but this should be left justified, with \"today\" so we can have a nice stacked grid here. ab",
+      "v": 12,
+      "at": 1791933426660
+     }
+    ],
+    "_v": 17,
+    "_origin": "Make the logo much bigger and remove the word “kraken” there",
+    "_changes": [
+     {
+      "v": 7,
+      "text": "include the next home gae so we have the last game which takes up 1/3 then we nave the next game which takes up 2/3 and includes the next home game (more subtle) IF and only if the next game is not home. if the next game is home then we just have the next 2 games. While a game is going on, let show the score and teme left at the top next ot the team logo. make the logo a little bit bigger still."
+     },
+     {
+      "v": 8,
+      "text": "make the next home gaem sorta smaller and subtext and aligned with the baseline of the next game it can just have the team logo and say \"Next @ home vs [logo] Tue, Oct 20 6:40PM\"  and lets also use for the next game the team logo."
+     },
+     {
+      "v": 9,
+      "text": "no still stack and left justify the \"at flyers today 4:00 thing. and make the logo a little bigger for the vs for tuesday thing its not super visible. so make the flyers logo bigger,  and change at to \"in Phili\" but this should be left justified, with \"today\" so we can have a nice stacked grid here. above the next home lets have the next 5 games in teh same format so we basically show the next five games, highlighting the next home game. be meticulous about the gir dnad layout here keeping it ul"
+     },
+     {
+      "v": 10,
+      "text": "No remove the color logos (rememer this is black and white. and lets make the logos bigger and put them in the first column - and just say \"at\" or \"vs'. then just use an outline to highlight the next home game. change hte label \"upcoming schedule\" to just say \"Upcoming\" and remove the star next home game. Finally lets left jsutify the last game W so all the text is justified to the left."
+     },
+     {
+      "v": 11,
+      "text": "Those logos need to be even bigger  lets scale them and increase the hehight fo the rows we can also increase teh font sizes of the last game effectively decreaseing the size of the header row to make more space for larger logos in the upcoming column and making the middle section taller and more prominant - don't decrease the logo at the top just decrease teh padding"
+     },
+     {
+      "v": 12,
+      "text": "Those logos need to be even bigger  lets scale them and increase the hehight fo the rows we can also increase teh font sizes of the last game effectively decreaseing the size of the header row to make more space for larger logos in the upcoming column and making the middle section taller and more prominant - don't decrease the logo at the top just decrease teh padding"
+     },
+     {
+      "v": 13,
+      "text": "make those logos even bigger - fand don't bold the red wings flyers lightning stext. the logos should be right next to the team name so the first column there is \"at\" or \"vs\" also instead of outlining the next home game just make it very very subtly grey."
+     },
+     {
+      "v": 14,
+      "text": "make those logos even bigger - fand don't bold the red wings flyers lightning stext. the logos should be right next to the team name so the first column there is \"at\" or \"vs\" also instead of outlining the next home game just make it very very subtly grey."
+     },
+     {
+      "v": 15,
+      "text": "how do we make sure that htis updates when its live?"
+     },
+     {
+      "v": 16,
+      "text": "remove the text \"upcoming and \"last game\" and make sure that the content inside the upcoming section is vertically centered in terms of padding top and bottom also make sure that we add a little bit more space above the bar graphs, and bump the text a little bit down for the labels so the bars can get a little bit bigger but vertically and horizontally spaced even in terms of padding."
+     },
+     {
+      "v": 17,
+      "text": "Make the bottom bar graphs a bit taller and reduce the padding on the bottom."
+     }
+    ]
    },
-   "id": "2lae0a",
+   "id": "r16v0x",
    "plugin": "recipe",
-   "name": "Hourly Weather Forecast"
+   "name": "NHL Scores and standings"
   },
   {
    "settings": {
-    "_recipe": "local:stock-quote",
+    "_recipe": "local:pixel-christmas-countdown",
     "dither": true,
+    "_prompt": "Christmas countdown. have Santa clause sitting on a sleigh being pulled by reindeer and in the back to the sleigh a giant present that has the number of days till Christmas — Make this more like a gameboy game style black and white like it could be a screen from a gameboy pocket game. There should be 8 tiny reindeer too. — Remove the top and test box and bottom text box. We don’t need any label test on the image expand the scene so it’s full screen. Then I want you to write a quick spec for yourself to generate 7-10 more of these scenes. And add them as a setting to this. First setting is either same scene or rotating. If a user chooses same then they can select the scene to sue. If it’s roasting the user selects the interval - every day or hour.  Also give a button to change the scene at any point while peeping the settings. — Work in those scenes I know you can do so so so much better. These are basic and blocky not like an actual gameboy pocket game. Make them seem stylistically in ",
+    "_origin": "Christmas countdown. have Santa clause sitting on a sleigh being pulled by reindeer and in the back to the sleigh a giant present that has the number of days till Christmas",
+    "_history": [
+     {
+      "ref": "local:christmas-countdown-w7j4u",
+      "prompt": "Christmas countdown. have Santa clause sitting on a sleigh being pulled by reindeer and in the back to the sleigh a giant present that has the number of days till Christmas — Make this more like a gameboy game style black and white like it could be a screen from a gameboy pocket game. There should be 8 tiny reindeer too. — Remove the top and test box and bottom text box. We don’t need any label test on the image expand the scene so it’s full screen. Then I want you to write a quick spec for yourself to generate 7-10 more of these scenes. And add them as a setting to this. First setting is either same scene or rotating. If a user chooses same then they can select the scene to sue. If it’s roasting the user selects the interval - every day or hour.  Also give a button to change the scene at any point while peeping the settings. — Work in those scenes I know you can do so so so much better. These are basic and blocky not like an actual gameboy pocket game. Make them seem stylistically in ",
+      "v": 10,
+      "at": 1792477592369
+     },
+     {
+      "v": 9,
+      "ref": "local:christmas-countdown-w2ugs",
+      "prompt": "Christmas countdown. have Santa clause sitting on a sleigh being pulled by reindeer and in the back to the sleigh a giant present that has the number of days till Christmas — Make this more like a gameboy game style black and white like it could be a screen from a gameboy pocket game. There should be 8 tiny reindeer too. — Remove the top and test box and bottom text box. We don’t need any label test on the image expand the scene so it’s full screen. Then I want you to write a quick spec for yourself to generate 7-10 more of these scenes. And add them as a setting to this. First setting is either same scene or rotating. If a user chooses same then they can select the scene to sue. If it’s roasting the user selects the interval - every day or hour.  Also give a button to change the scene at any point while peeping the settings. — Work in those scenes I know you can do so so so much better. These are basic and blocky not like an actual gameboy pocket game. Make them seem stylistically in "
+     },
+     {
+      "v": 8,
+      "ref": "local:christmas-countdown-umh6m",
+      "prompt": "Christmas countdown. have Santa clause sitting on a sleigh being pulled by reindeer and in the back to the sleigh a giant present that has the number of days till Christmas — Make this more like a gameboy game style black and white like it could be a screen from a gameboy pocket game. There should be 8 tiny reindeer too. — Remove the top and test box and bottom text box. We don’t need any label test on the image expand the scene so it’s full screen. Then I want you to write a quick spec for yourself to generate 7-10 more of these scenes. And add them as a setting to this. First setting is either same scene or rotating. If a user chooses same then they can select the scene to sue. If it’s roasting the user selects the interval - every day or hour.  Also give a button to change the scene at any point while peeping the settings. — Work in those scenes I know you can do so so so much better. These are basic and blocky not like an actual gameboy pocket game. Make them seem stylistically in "
+     },
+     {
+      "v": 7,
+      "ref": "local:christmas-countdown-y75lo",
+      "prompt": "Christmas countdown. have Santa clause sitting on a sleigh being pulled by reindeer and in the back to the sleigh a giant present that has the number of days till Christmas — Make this more like a gameboy game style black and white like it could be a screen from a gameboy pocket game. There should be 8 tiny reindeer too. — Remove the top and test box and bottom text box. We don’t need any label test on the image expand the scene so it’s full screen. Then I want you to write a quick spec for yourself to generate 7-10 more of these scenes. And add them as a setting to this. First setting is either same scene or rotating. If a user chooses same then they can select the scene to sue. If it’s roasting the user selects the interval - every day or hour.  Also give a button to change the scene at any point while peeping the settings. — Work in those scenes I know you can do so so so much better. These are basic and blocky not like an actual gameboy pocket game. Make them seem stylistically in "
+     }
+    ],
+    "_v": 13,
+    "_changes": [
+     {
+      "v": 2,
+      "text": "Make this more like a gameboy game style black and white like it could be a screen from a gameboy pocket game. There should be 8 tiny reindeer too."
+     },
+     {
+      "v": 3,
+      "text": "Remove the top and test box and bottom text box. We don’t need any label test on the image expand the scene so it’s full screen. Then I want you to write a quick spec for yourself to generate 7-10 more of these scenes. And add them as a setting to this. First setting is either same scene or rotating. If a user chooses same then they can select the scene to sue. If it’s roasting the user selects the interval - every day or hour.  Also give a button to change the scene at any point while peeping t"
+     },
+     {
+      "v": 4,
+      "text": "Work in those scenes I know you can do so so so much better. These are basic and blocky not like an actual gameboy pocket game. Make them seem stylistically in terms of art and detail"
+     },
+     {
+      "v": 5,
+      "text": "Work in those scenes I know you can do so so so much better. These are basic and blocky not like an actual gameboy pocket game. Like the snow globe could have snow and look so much better so can the workshop. Make them seem stylistically in terms of art and detail"
+     },
+     {
+      "v": 6,
+      "text": "Again you can do better with all these. Add some elves tot he toys scene really make a great gameboy pocket looking gsmer"
+     },
+     {
+      "v": 7,
+      "text": "Make all these way cuter and way more detailles"
+     },
+     {
+      "v": 8,
+      "text": "okay so santa sleight and 8 reindeer is perfect dont' change that, then I wanto to make some better ones for the workshop - lets get good concepts there so for santas workshop for isntance we can have the elves tearing away parts of the chain that has 72 rings left on it and a board at the top that syas 71 days left till the big show and other ones working in the background - i think we can get conceptual with all of these take some time and do it"
+     },
+     {
+      "v": 9,
+      "text": "lets make the pxiel art more like this:\n\nFrom the reference picture: Create a festive display featuring a balanced grid of holiday pixel art icons. Arrange 16 retro 8-bit illustrations—including Santa, reindeer, gingerbread figures, evergreen trees, candles, bells, and ornaments—in a clean, evenly spaced landscape grid. The style emphasizes nostalgic, chunky pixel art with crisp black outlines. Replace original color fills with distinct monochrome techniques: solid black, crisp white negative sp"
+     },
+     {
+      "v": 10,
+      "text": "No i meant keep the ones we had before but just use these new pixel iamges to help improve the artwork on teh ones we had before we should still ahve several of them."
+     },
+     {
+      "v": 13,
+      "text": "Pixel-art scenes: sleigh, workshop, toy shop, two snow globes, train"
+     }
+    ],
+    "v_scene": "shuffle",
+    "v_rotate": "refresh"
+   },
+   "id": "t05wsa",
+   "plugin": "recipe",
+   "name": "Christmas Countdown"
+  },
+  {
+   "settings": {
+    "_recipe": "local:stock-7744c",
+    "dither": true,
+    "_prompt": "Add a line graph of just today and remove the volume to replace with 52 week high. also remove the decimal signs for high low and open. — no on my last i meant keep the one month line graph as the main one, and then add a small linekgraph of todays trends as well. make sure hte top of the stock ticker GOOG is alined with the top of the price at the top, and all numbers are always rounded (for the total, round down)  to the nearest dollar. finally only show percent for up or down gain loss on the day. — Naw move today graph to just be a visual line graph as a background to the main stock price. And keep the month extending across the whole page the percent shouldn’t be rounded just two decimals is fine remove the 1 month tend label. Make sure everything is balanced gridded and looks nice — remove hthe line on the top of the line graph and just put a bottom date start and date end to label it. and lable the bottom grpah remove the top line and 30 days ago adn range and latest - these can",
+    "_history": [
+     {
+      "ref": "local:stock-6z2d7",
+      "prompt": "Add a line graph of just today and remove the volume to replace with 52 week high. also remove the decimal signs for high low and open. — no on my last i meant keep the one month line graph as the main one, and then add a small linekgraph of todays trends as well. make sure hte top of the stock ticker GOOG is alined with the top of the price at the top, and all numbers are always rounded (for the total, round down)  to the nearest dollar. finally only show percent for up or down gain loss on the day. — Naw move today graph to just be a visual line graph as a background to the main stock price. And keep the month extending across the whole page the percent shouldn’t be rounded just two decimals is fine remove the 1 month tend label. Make sure everything is balanced gridded and looks nice — remove hthe line on the top of the line graph and just put a bottom date start and date end to label it. and lable the bottom grpah remove the top line and 30 days ago adn range and latest - these can",
+      "v": 5,
+      "at": 1791927216040
+     },
+     {
+      "ref": "local:stock-6u8c4",
+      "prompt": "Add a line graph of just today and remove the volume to replace with 52 week high. also remove the decimal signs for high low and open. — no on my last i meant keep the one month line graph as the main one, and then add a small linekgraph of todays trends as well. make sure hte top of the stock ticker GOOG is alined with the top of the price at the top, and all numbers are always rounded (for the total, round down)  to the nearest dollar. finally only show percent for up or down gain loss on the day. — Naw move today graph to just be a visual line graph as a background to the main stock price. And keep the month extending across the whole page the percent shouldn’t be rounded just two decimals is fine remove the 1 month tend label. Make sure everything is balanced gridded and looks nice",
+      "v": 4,
+      "at": 1791926840700
+     },
+     {
+      "ref": "local:stock-6qcht",
+      "prompt": "Add a line graph of just today and remove the volume to replace with 52 week high. also remove the decimal signs for high low and open. — no on my last i meant keep the one month line graph as the main one, and then add a small linekgraph of todays trends as well. make sure hte top of the stock ticker GOOG is alined with the top of the price at the top, and all numbers are always rounded (for the total, round down)  to the nearest dollar. finally only show percent for up or down gain loss on the day.",
+      "v": 3,
+      "at": 1791926614818
+     },
+     {
+      "ref": "local:stock-6j27t",
+      "prompt": "Add a line graph of just today and remove the volume to replace with 52 week high. also remove the decimal signs for high low and open.",
+      "v": 2,
+      "at": 1791926433522
+     },
+     {
+      "v": 1,
+      "ref": "local:stock-quote",
+      "prompt": ""
+     }
+    ],
+    "_v": 6,
+    "_origin": "Add a line graph of just today and remove the volume to replace with 52 week high. also remove the decimal signs for high low and open.",
+    "_changes": [
+     {
+      "v": 2,
+      "text": "Add a line graph of just today and remove the volume to replace with 52 week high. also remove the decimal signs for high low and open."
+     },
+     {
+      "v": 3,
+      "text": "no on my last i meant keep the one month line graph as the main one, and then add a small linekgraph of todays trends as well. make sure hte top of the stock ticker GOOG is alined with the top of the price at the top, and all numbers are always rounded (for the total, round down)  to the nearest dollar. finally only show percent for up or down gain loss on the day."
+     },
+     {
+      "v": 4,
+      "text": "Naw move today graph to just be a visual line graph as a background to the main stock price. And keep the month extending across the whole page the percent shouldn’t be rounded just two decimals is fine remove the 1 month tend label. Make sure everything is balanced gridded and looks nice"
+     },
+     {
+      "v": 5,
+      "text": "remove hthe line on the top of the line graph and just put a bottom date start and date end to label it. and lable the bottom grpah remove the top line and 30 days ago adn range and latest - these can all be covered in the grpah on the bottom labels remove the line on top fo the number as well put the daily spark between GOOG and the stock price number instead of behind and scale it to whatever space we have there."
+     },
+     {
+      "v": 6,
+      "text": "remove the \"today\" label and make the high and low over the past month a little bigger/more promnant and more distriburted instead of right aligned."
+     }
+    ],
     "v_symbol": "GOOG",
-    "v_asset_class": "stocks",
-    "v_days": "30"
+    "v_asset_class": "stocks"
    },
-   "id": "cy0dq5",
+   "id": "m7rmnw",
    "plugin": "recipe",
    "name": "Stock"
+  },
+  {
+   "settings": {
+    "_recipe": "230540",
+    "dither": true,
+    "v_show_title": "show",
+    "v_show_alt": "show"
+   },
+   "id": "1i3c8i",
+   "plugin": "recipe",
+   "name": "XKCD Comic (with hover text)"
+  },
+  {
+   "settings": {
+    "v_scene": "shuffle",
+    "v_rotate": "refresh",
+    "_recipe": "local:pixel-halloween-countdown",
+    "dither": true,
+    "_prompt": "Make me a couple of haloween countdown screens - tehse should countdown the days to haloween in a a sorta 16-bit pixelated way - use the attached image as reference but lets create 4 scenes for countdown sto halwoeen that all incorporate the number and count in creative ways to countdown to haloween i should be able to rotate between them every time randomly or select a fixed one but easily preview them.",
+    "_origin": "Make me a couple of haloween countdown screens - tehse should countdown the days to haloween in a a sorta 16-bit pixelated way - use the attached image as reference but lets create 4 scenes for countdown sto halwoeen that all incorporate the number and count in creative ways to countdown to haloween i should be able to rotate between them every time randomly or select a fixed one but easily preview them.",
+    "_history": [
+     {
+      "ref": "local:halloween-countdown",
+      "prompt": "Make me a couple of haloween countdown screens - tehse should countdown the days to haloween in a a sorta 16-bit pixelated way - use the attached image as reference but lets create 4 scenes for countdown sto halwoeen that all incorporate the number and count in creative ways to countdown to haloween i should be able to rotate between them every time randomly or select a fixed one but easily preview them.",
+      "v": 1,
+      "at": 1792477592369
+     }
+    ],
+    "_v": 2,
+    "_changes": [
+     {
+      "v": 2,
+      "text": "Pixel-art scenes: haunted house, jack-o'-lantern, pumpkin patch, tombstone, cauldron"
+     }
+    ]
+   },
+   "id": "yc2njt",
+   "plugin": "recipe",
+   "name": "Halloween Countdown"
   },
   {
    "settings": {
@@ -51,48 +303,395 @@
     "v_scene": "shuffle",
     "v_rotate": "refresh"
    },
-   "id": "dhkn0b",
+   "id": "5un67d",
    "plugin": "recipe",
    "name": "Christmas Countdown"
   },
   {
-   "settings": {},
-   "id": "tfzvv1",
-   "plugin": "hackernews",
-   "name": "Hacker News"
-  },
-  {
    "settings": {
-    "custom": ""
+    "dither": true,
+    "_origin": "Todays weather high and low with line graph of hourly precipitation percent. then the next five days weather with hourly lsmall line graph of precipitation percent throughout the day and all with icons for type of weather (cloudy or rainy or whatever) and then average % chacne fo preceiption rain for the other days. minimal less labels",
+    "_changes": [
+     {
+      "v": 2,
+      "text": "default to seattle and maek sure we have a city selector here so someone can select any city and it reloads"
+     },
+     {
+      "v": 3,
+      "text": "the hourly graph should be from 5am until 11pm for both the small one sand the big ones. get rid of the \"select\" part at the top and tihe \"city\" label (that whole line) this isn't interactive. finally for th ecity just allow me to put in any zip code, and lets use that."
+     },
+     {
+      "v": 4,
+      "text": "make sure the top says Tue, Oct 13 in Seattle, WA for example. and have the big number be current temp, then stack the high low to the right of it and then remove the (5 am - 11 pm) textfrom the precipitation title."
+     },
+     {
+      "v": 5,
+      "text": "Great, get rid of the H and athe L label and they shoudl be the same text size as each other. also for some reason the tue text and the avg text is super grainy/pixelated, can you help fix that - it ssubtle but mauybe we update the font or something the other text and stuff displays fine. lets call this app \"rain or no rain\""
+     }
+    ],
+    "_recipe": "local:rain-or-no-rain-0xg9t",
+    "_prompt": "Todays weather high and low with line graph of hourly precipitation percent. then the next five days weather with hourly lsmall line graph of precipitation percent throughout the day and all with icons for type of weather (cloudy or rainy or whatever) and then average % chacne fo preceiption rain for the other days. minimal less labels — default to seattle and maek sure we have a city selector here so someone can select any city and it reloads — the hourly graph should be from 5am until 11pm for both the small one sand the big ones. get rid of the \"select\" part at the top and tihe \"city\" label (that whole line) this isn't interactive. finally for th ecity just allow me to put in any zip code, and lets use that. — make sure the top says Tue, Oct 13 in Seattle, WA for example. and have the big number be current temp, then stack the high low to the right of it and then remove the (5 am - 11 pm) textfrom the precipitation title. — Great, get rid of the H and athe L label and they shoudl be",
+    "_v": 5,
+    "_history": [
+     {
+      "v": 4,
+      "ref": "local:weather-precip-0qpyo",
+      "prompt": "Todays weather high and low with line graph of hourly precipitation percent. then the next five days weather with hourly lsmall line graph of precipitation percent throughout the day and all with icons for type of weather (cloudy or rainy or whatever) and then average % chacne fo preceiption rain for the other days. minimal less labels — default to seattle and maek sure we have a city selector here so someone can select any city and it reloads — the hourly graph should be from 5am until 11pm for both the small one sand the big ones. get rid of the \"select\" part at the top and tihe \"city\" label (that whole line) this isn't interactive. finally for th ecity just allow me to put in any zip code, and lets use that. — make sure the top says Tue, Oct 13 in Seattle, WA for example. and have the big number be current temp, then stack the high low to the right of it and then remove the (5 am - 11 pm) textfrom the precipitation title."
+     },
+     {
+      "v": 3,
+      "ref": "local:weather-precip-0kzo7",
+      "prompt": "Todays weather high and low with line graph of hourly precipitation percent. then the next five days weather with hourly lsmall line graph of precipitation percent throughout the day and all with icons for type of weather (cloudy or rainy or whatever) and then average % chacne fo preceiption rain for the other days. minimal less labels — default to seattle and maek sure we have a city selector here so someone can select any city and it reloads — the hourly graph should be from 5am until 11pm for both the small one sand the big ones. get rid of the \"select\" part at the top and tihe \"city\" label (that whole line) this isn't interactive. finally for th ecity just allow me to put in any zip code, and lets use that."
+     },
+     {
+      "v": 2,
+      "ref": "local:weather-forecast-precip-zsu40",
+      "prompt": "Todays weather high and low with line graph of hourly precipitation percent. then the next five days weather with hourly lsmall line graph of precipitation percent throughout the day and all with icons for type of weather (cloudy or rainy or whatever) and then average % chacne fo preceiption rain for the other days. minimal less labels — default to seattle and maek sure we have a city selector here so someone can select any city and it reloads"
+     },
+     {
+      "v": 1,
+      "ref": "local:weather-precip",
+      "prompt": "Todays weather high and low with line graph of hourly precipitation percent. then the next five days weather with hourly lsmall line graph of precipitation percent throughout the day and all with icons for type of weather (cloudy or rainy or whatever) and then average % chacne fo preceiption rain for the other days. minimal less labels"
+     }
+    ],
+    "_future": [],
+    "v_zipcode": "98101",
+    "v_units": "fahrenheit"
    },
-   "id": "evevw9",
-   "plugin": "quote",
-   "name": "Motivational Quote"
+   "id": "5a5xpe",
+   "plugin": "recipe",
+   "name": "Weather & Precip",
+   "routine": {
+    "every": "day",
+    "at": "06:00",
+    "mins": 120
+   }
   },
   {
    "settings": {
-    "label": "Days left this year",
-    "date": "2026-12-31"
+    "_recipe": "201904",
+    "dither": true
    },
-   "id": "5m1022",
-   "plugin": "countdown",
-   "name": "Days Left This Year"
+   "id": "gjalgn",
+   "plugin": "recipe",
+   "name": "Fortune Cookie of the Day"
   },
   {
    "settings": {
-    "title": "Hello, TRMNL",
-    "body": "Edit this screen from cntrl on your phone.",
-    "items": "Water the plants\nCall Mom\nShip the thing",
+    "urls": "https://haaans.com/cntrl/demo-calendar.ics",
+    "days": "7",
+    "title": "Family Calendar"
+   },
+   "id": "id6nlh",
+   "plugin": "calendar",
+   "name": "Google Calendar"
+  },
+  {
+   "settings": {
+    "_recipe": "local:tonights-moon",
+    "dither": true,
+    "v_city": "Seattle",
+    "v_latitude": "47.6062",
+    "v_longitude": "-122.3321",
+    "_prompt": "Tonight's moon phase, with moonrise and moonset in Seattle",
+    "_origin": "Tonight's moon phase, with moonrise and moonset in Seattle"
+   },
+   "id": "f1slxl",
+   "plugin": "recipe",
+   "name": "Tonight's Moon"
+  }
+ ],
+ "hidden": [
+  {
+   "settings": {
+    "_recipe": "127208",
+    "dither": true,
+    "v_latitude": "47.61",
+    "v_longitude": "-122.33",
+    "v_showloc": "hideloc",
+    "v_nosun": "nosun",
+    "v_nomoon": "moon",
+    "v_hour24": "hour12"
+   },
+   "id": "9dliww",
+   "plugin": "recipe",
+   "name": "Day Night Map"
+  },
+  {
+   "settings": {
+    "_recipe": "local:nhl-leaders-rjwlv",
+    "dither": true,
+    "_prompt": "show a bar graph of the top nhl teams. Make sure it’s horizontal and shows the top 10 and the bars on the graph are filled in.",
+    "_v": 5,
+    "_history": [
+     {
+      "ref": "local:nhl-leaders-dlwqx",
+      "prompt": "show a bar graph of the top nhl teams. Make sure it’s horizontal and shows the top 10 and the bars on the graph are filled in.",
+      "v": 4,
+      "at": 1791913234348
+     },
+     {
+      "ref": "local:nhl-leaders-de64l",
+      "prompt": "show a bar graph of the top nhl teams. Make sure it’s horizontal and shows the top 10 and the bars on the graph are filled in.",
+      "at": 1791877516891
+     },
+     {
+      "ref": "local:nhl-leaders-c84zr",
+      "prompt": "show a bar graph of the top nhl teams. Make sure it’s horizontal and shows the top 10 and the bars on the graph are filled in.",
+      "at": 1791877155815
+     },
+     {
+      "ref": "local:nhl-top-teams",
+      "prompt": "show a bar graph of the top nhl teams",
+      "at": 1791875194796
+     }
+    ],
+    "_future": []
+   },
+   "id": "p5evg7",
+   "plugin": "recipe",
+   "name": "NHL Leaders"
+  },
+  {
+   "settings": {
+    "_recipe": "250879",
+    "dither": true,
+    "v_force_light_mode": "true",
+    "v_country_code": "US",
+    "v_region_code": "",
+    "v_custom_countdown_date": "",
+    "v_custom_countdown_label": ""
+   },
+   "id": "abuuw4",
+   "plugin": "recipe",
+   "name": "Today: Beautiful Date & Countdown"
+  },
+  {
+   "settings": {
+    "preset": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+    "url": "",
+    "title": ""
+   },
+   "id": "tvj2f8",
+   "plugin": "news",
+   "name": "News"
+  },
+  {
+   "settings": {
+    "location": "seattle, wa",
+    "units": "f",
+    "_query": "seattle, wa",
+    "_lat": 47.60621,
+    "_lon": -122.33207,
+    "_place": "Seattle",
+    "_region": "Washington, US"
+   },
+   "id": "zqi2xb",
+   "plugin": "weather",
+   "name": "Weather"
+  },
+  {
+   "settings": {
+    "_recipe": "local:simple-calendar",
+    "dither": true,
+    "v_locale": "default_-_follow_trmnl_ui",
+    "v_week_starts_from": "0_-_sunday",
+    "v_holiday_wday": "0_-_sunday",
+    "v_holiday_country": "off",
+    "v_show_num_months": "1",
+    "v_font_size": "regular",
+    "v_show_wday_labels": "automatic",
+    "v_alternate_calendar": "off",
+    "v_font_family": "default",
+    "v_hide_title_bar": "no",
+    "v_show_month_abbr": "no"
+   },
+   "id": "p4f8qn",
+   "plugin": "recipe",
+   "name": "Simple Calendar"
+  },
+  {
+   "settings": {
+    "_recipe": "27184",
+    "dither": false
+   },
+   "id": "x5419q",
+   "plugin": "recipe",
+   "name": "Calvin and Hobbes Comics"
+  },
+  {
+   "settings": {
+    "_recipe": "local:nasa-apod",
+    "dither": true,
+    "v_api_key": "",
+    "_prompt": "NASA picture of the day. Plan it out and fetch the next week if you can’t so actual api integration. Or need a key then cache the next week and add a field for me to enter api keys that you can use if I add it"
+   },
+   "id": "2rqdfg",
+   "plugin": "recipe",
+   "name": "NASA APOD"
+  },
+  {
+   "settings": {
+    "_recipe": "local:halloween-countdown",
+    "dither": true,
+    "v_scene": "random",
+    "v_custom_days": ""
+   },
+   "id": "ff6dtl",
+   "plugin": "recipe",
+   "name": "Halloween Countdown"
+  },
+  {
+   "settings": {
+    "_recipe": "local:pixel-halloween-countdown",
+    "dither": true,
+    "v_scene": "grave",
+    "v_dark": "false",
+    "v_rotate": "refresh"
+   },
+   "id": "wtmcq5",
+   "plugin": "recipe",
+   "name": "Halloween Countdown"
+  },
+  {
+   "settings": {
+    "_recipe": "local:recipe-card-fkw7w",
+    "dither": true,
+    "v_title": "Cast Iron Skillet Burger",
+    "v_category": "Dinner · 2 Servings",
+    "v_prep_time": "10m",
+    "v_cook_time": "8m",
+    "v_temp": "High Heat",
+    "v_ingredients_text": "1/2 lb 80/20 ground beef\n1 tsp coarse kosher salt\n1/2 tsp black pepper\n2 brioche buns, buttered\n2 slices sharp cheddar\n1 tbsp neutral oil or tallow",
+    "v_steps_text": "Divide beef into two loose 4-oz balls. Do not overwork.\nHeat cast iron until lightly smoking with thin oil layer.\nPlace beef in skillet, smash flat immediately.\nSeason with salt & pepper. Cook 2-3 min for deep crust.\nFlip, top with cheese, cover 1 min to melt.\nToast buns, assemble, rest 2 min and serve.",
+    "_prompt": "Make me a very simple recipe card that allows for traditional looking simple hierarchical recipe card that has ingredients, directions and i can keep up while i'm cooking. — Align this better for betterv isiblity so all the instructiosn and numbers are aligned for directions and ingredietns the jsutification is a bit off. the text and stuff is just a little bit hard to read liek toot hin or small and we don't need a line under the title lets left justify the titel move it closer to teh top as well. — Our columns still aren’t aligned text is chaotic. Design this on a grid simple and easy. — Our columns still aren’t aligned text is chaotic. Design this on a grid simple and easy. — Get rid of the line underneath the title and right  justify the cook time and prep pinned to the top right. These and the title are the least interesting parts so they should take up the least space and prominence. Reduce the lines and leave more space for the recipe part — Make sure the header section takes up",
+    "_history": [
+     {
+      "ref": "local:recipe-card-ffjtj",
+      "prompt": "Make me a very simple recipe card that allows for traditional looking simple hierarchical recipe card that has ingredients, directions and i can keep up while i'm cooking. — Align this better for betterv isiblity so all the instructiosn and numbers are aligned for directions and ingredietns the jsutification is a bit off. the text and stuff is just a little bit hard to read liek toot hin or small and we don't need a line under the title lets left justify the titel move it closer to teh top as well. — Our columns still aren’t aligned text is chaotic. Design this on a grid simple and easy. — Our columns still aren’t aligned text is chaotic. Design this on a grid simple and easy. — Get rid of the line underneath the title and right  justify the cook time and prep pinned to the top right. These and the title are the least interesting parts so they should take up the least space and prominence. Reduce the lines and leave more space for the recipe part — Make sure the header section takes up",
+      "v": 6,
+      "at": 1791941295458
+     },
+     {
+      "ref": "local:recipe-card-fbq1i",
+      "prompt": "Make me a very simple recipe card that allows for traditional looking simple hierarchical recipe card that has ingredients, directions and i can keep up while i'm cooking. — Align this better for betterv isiblity so all the instructiosn and numbers are aligned for directions and ingredietns the jsutification is a bit off. the text and stuff is just a little bit hard to read liek toot hin or small and we don't need a line under the title lets left justify the titel move it closer to teh top as well. — Our columns still aren’t aligned text is chaotic. Design this on a grid simple and easy. — Our columns still aren’t aligned text is chaotic. Design this on a grid simple and easy. — Get rid of the line underneath the title and right  justify the cook time and prep pinned to the top right. These and the title are the least interesting parts so they should take up the least space and prominence. Reduce the lines and leave more space for the recipe part",
+      "v": 5,
+      "at": 1791941046435
+     },
+     {
+      "ref": "local:recipe-card-f1mva",
+      "prompt": "Make me a very simple recipe card that allows for traditional looking simple hierarchical recipe card that has ingredients, directions and i can keep up while i'm cooking. — Align this better for betterv isiblity so all the instructiosn and numbers are aligned for directions and ingredietns the jsutification is a bit off. the text and stuff is just a little bit hard to read liek toot hin or small and we don't need a line under the title lets left justify the titel move it closer to teh top as well. — Our columns still aren’t aligned text is chaotic. Design this on a grid simple and easy. — Our columns still aren’t aligned text is chaotic. Design this on a grid simple and easy.",
+      "v": 4,
+      "at": 1791940867727
+     },
+     {
+      "ref": "local:recipe-card-f1jde",
+      "prompt": "Make me a very simple recipe card that allows for traditional looking simple hierarchical recipe card that has ingredients, directions and i can keep up while i'm cooking. — Align this better for betterv isiblity so all the instructiosn and numbers are aligned for directions and ingredietns the jsutification is a bit off. the text and stuff is just a little bit hard to read liek toot hin or small and we don't need a line under the title lets left justify the titel move it closer to teh top as well. — Our columns still aren’t aligned text is chaotic. Design this on a grid simple and easy.",
+      "v": 3,
+      "at": 1791940397078
+     },
+     {
+      "ref": "local:recipe-card-bfhau",
+      "prompt": "Make me a very simple recipe card that allows for traditional looking simple hierarchical recipe card that has ingredients, directions and i can keep up while i'm cooking. — Align this better for betterv isiblity so all the instructiosn and numbers are aligned for directions and ingredietns the jsutification is a bit off. the text and stuff is just a little bit hard to read liek toot hin or small and we don't need a line under the title lets left justify the titel move it closer to teh top as well.",
+      "v": 2,
+      "at": 1791940392700
+     }
+    ],
+    "_v": 7,
+    "_origin": "Make me a very simple recipe card that allows for traditional looking simple hierarchical recipe card that has ingredients, directions and i can keep up while i'm cooking.",
+    "_changes": [
+     {
+      "v": 2,
+      "text": "Align this better for betterv isiblity so all the instructiosn and numbers are aligned for directions and ingredietns the jsutification is a bit off. the text and stuff is just a little bit hard to read liek toot hin or small and we don't need a line under the title lets left justify the titel move it closer to teh top as well."
+     },
+     {
+      "v": 3,
+      "text": "Our columns still aren’t aligned text is chaotic. Design this on a grid simple and easy."
+     },
+     {
+      "v": 4,
+      "text": "Our columns still aren’t aligned text is chaotic. Design this on a grid simple and easy."
+     },
+     {
+      "v": 5,
+      "text": "Get rid of the line underneath the title and right  justify the cook time and prep pinned to the top right. These and the title are the least interesting parts so they should take up the least space and prominence. Reduce the lines and leave more space for the recipe part"
+     },
+     {
+      "v": 6,
+      "text": "Make sure the header section takes up the full width of the card stretches all the way across make this look intentional high density and the hero is the recipe and steps. The prep and cook can be subtly anchored to top right of page and title stuck to left too. Allow for horizontal rules to divide sections in bit the directions and ingredients."
+     },
+     {
+      "v": 7,
+      "text": "Remove the lines in between each item but allow one of the rows to be a horizontal rules by putting ——- in the input or soemthing g. For the cook have the top part the cook time and then below should ah e the temp"
+     }
+    ]
+   },
+   "id": "wncvrl",
+   "plugin": "recipe",
+   "name": "Recipe Card"
+  }
+ ],
+ "recent": [
+  {
+   "settings": {
+    "_recipe": "local:goog-vs-sp500",
+    "dither": true,
+    "v_symbol": "GOOG",
+    "v_range": "365",
+    "_prompt": "show me GOOG price, 52 week high and a line grpah comparing it and s&P 500"
+   },
+   "id": "0m3b1y",
+   "plugin": "recipe",
+   "name": "GOOG vs S&P 500",
+   "removedAt": 1791905764678
+  },
+  {
+   "settings": {
+    "title": "Hi hans",
+    "body": "what are you up to ",
+    "items": "Item one\r\nThen go say hi to hans\r\nthen do him ",
     "footer": "",
     "showDate": true
    },
-   "id": "today",
+   "id": "main",
    "plugin": "dashboard",
-   "name": "Today"
+   "name": "Today",
+   "removedAt": 1791864093268
+  },
+  {
+   "settings": {
+    "_recipe": "35788",
+    "dither": true,
+    "v_Latitude": "",
+    "v_Longitude": "",
+    "v_Units": "Metric"
+   },
+   "id": "ntyj4r",
+   "plugin": "recipe",
+   "name": "Hourly Weather Forecast",
+   "removedAt": 1791863836951
+  },
+  {
+   "settings": {
+    "title": "Groceries",
+    "items": "Eggs\nCoffee",
+    "footer": "",
+    "showDate": true,
+    "showUpdated": false
+   },
+   "id": "ucnvyk",
+   "plugin": "list",
+   "name": "List",
+   "removedAt": 0
+  },
+  {
+   "settings": {},
+   "id": "49t997",
+   "plugin": "hackernews",
+   "name": "Hacker News",
+   "removedAt": 0
   }
  ],
- "hidden": [],
- "recent": [],
  "sleep": {
   "screen": "",
   "settings": {
@@ -103,6 +702,7 @@
  "upNext": null,
  "pin": null,
  "adopted": [
-  "pixel-countdowns-1:christmas"
+  "pixel-countdowns-1:christmas",
+  "pixel-countdowns-1:halloween"
  ]
 }

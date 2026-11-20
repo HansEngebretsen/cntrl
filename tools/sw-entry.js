@@ -3,6 +3,7 @@
 // drawn by the page (client.js) instead of Browser Run, the AI answers are canned (shim/ai.js) and no device
 // is ever reached. Everything else is the app's own code.
 import worker, { BuildRunner } from 'cntrl-worker';
+import { demoIcs, isDemoCalendar } from './demo-calendar.js';
 
 const SEED_VERSION = '__SEED_VERSION__';
 const BASE = new URL(self.registration.scope).pathname.replace(/\/$/, ''); // e.g. "/cntrl"
@@ -119,6 +120,7 @@ const recorded = (url) => {
 };
 self.fetch = async (input, init) => {
   const url = typeof input === 'string' ? input : input instanceof URL ? input.href : input.url;
+  if (isDemoCalendar(url)) return new Response(demoIcs(), { headers: { 'Content-Type': 'text/calendar' } });
   if (url.startsWith(ORIGIN)) return netFetch(input, init);
   const rec = recorded(url);
   if (rec && (/image\//.test(rec.headers.get('Content-Type')) || !init?.method || init.method === 'GET')) return rec;

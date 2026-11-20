@@ -3,6 +3,8 @@
 import worker from 'cntrl-worker';
 import { closeAll } from './shim/puppeteer-node.js';
 import config from './seed-config.json';
+import liveKv from './seed-kv.json';
+import { demoIcs, isDemoCalendar } from './demo-calendar.js';
 
 const ORIGIN = 'https://haaans.com';
 const AUTH = { Authorization: `Basic ${Buffer.from('demo:demo').toString('base64')}`, Origin: ORIGIN };
@@ -30,15 +32,16 @@ export async function makeSeed() {
   const dev = 'UI:CH:EC:K0:00:01';
   await kv.put('config', JSON.stringify(config));
   await kv.put('devices', JSON.stringify([dev]));
-  await kv.put(`device:${dev}`, JSON.stringify({ id: dev, batteryVoltage: 3.95, batteryPercent: 72, rssi: -60, lastSeen: new Date(now - 4 * 60e3).toISOString(), batteryLog: [[now - 86400e3, 74], [now - 4 * 60e3, 72]], shownId: config.screens[0].id, sentRate: 900, nextWakeAt: new Date(now + 11 * 60e3).toISOString() }));
+  await kv.put(`device:${dev}`, JSON.stringify({ id: dev, batteryVoltage: 3.95, batteryPercent: 72, rssi: -60, lastSeen: new Date(now - 4 * 60e3).toISOString(), batteryLog: [[now - 86400e3, 74], [now - 4 * 60e3, 72]], shownId: (config.screens.find((s) => s.name === 'Stock') || config.screens[0]).id, sentRate: 900, nextWakeAt: new Date(now + 11 * 60e3).toISOString() }));
   await kv.put('ai', JSON.stringify({ provider: 'claude', claude: { key: 'demo-no-real-key-0000', checkedAt: new Date(now).toISOString(), error: null }, gemini: {} }));
-  await kv.put('recipes:local', '[]');
+  for (const [k, v] of Object.entries(liveKv)) await kv.put(k, v); // the live app's recipes, pictures and build history
 
   // Record what the screens fetch from outside.
   const record = {};
   const real = globalThis.fetch;
   globalThis.fetch = async (input, init) => {
     const url = typeof input === 'string' ? input : input instanceof URL ? input.href : input.url;
+    if (isDemoCalendar(url)) return new Response(demoIcs(), { headers: { 'Content-Type': 'text/calendar' } });
     const res = await real(input, init);
     if ((!init?.method || init.method === 'GET') && !url.startsWith(ORIGIN)) {
       const c = res.clone();
@@ -76,7 +79,7 @@ export async function makeSeed() {
   // in the seed (adding one in the demo then needs nothing that a page isn't allowed to fetch). Then put the
   // starting state back, keeping only the renders.
   const before = new Map(kv.m);
-  const picks = [...page.matchAll(/data-kind="(plugin|native)" data-ref="([^"]+)"/g)].map((m) => ({ kind: m[1], ref: m[2] }));
+  const picks = [...page.matchAll(/data-kind="(plugin|native|recipe)" data-ref="([^"]+)"/g)].map((m) => ({ kind: m[1], ref: m[2] }));
   const tryAdd = async ({ kind, ref }) => {
     const pending = [];
     const r = await worker.fetch(new Request(`${ORIGIN}/admin/api/screens`, { method: 'POST', headers: { ...AUTH, 'Content-Type': 'application/json' }, body: JSON.stringify({ kind, ref }) }), env, { waitUntil: (p) => pending.push(p), passThroughOnException() {} });
