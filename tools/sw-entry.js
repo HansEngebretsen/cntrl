@@ -148,8 +148,9 @@ self.cntrlRaster = async (html) => {
 // ---------- paths: the app lives at /, the demo at BASE/ ----------
 const ROOTS = 'admin|login|logout|api/|sw\\.js|render|app\\.|thumbs/|site\\.webmanifest|health|favicon|apple-touch-icon|web-app-manifest|image/';
 const rootRe = new RegExp(`(["'\`(=,]|url\\()/(${ROOTS})`, 'g');
+const originRe = new RegExp(`${ORIGIN.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&')}/(${ROOTS})`, 'g');
 const rewrite = (s) => s
-  .split(`${ORIGIN}/`).join(`${ORIGIN}${BASE}/`)
+  .replace(originRe, `${ORIGIN}${BASE}/$1`)
   .replace(rootRe, `$1${BASE}/$2`)
   .split(`${BASE}${BASE}/`).join(`${BASE}/`);
 
